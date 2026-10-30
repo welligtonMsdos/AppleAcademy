@@ -1,4 +1,5 @@
 <Solution>
+  <Project Path="AppleAcademy.Api/AppleAcademy.Api.csproj" Id="9c88b6fb-1e9e-4ec5-a92e-0ff7419909cd" />
   <Project Path="AppleAcademy.Application/AppleAcademy.Application.csproj" Id="ae2f52f0-2731-4a34-88e6-50ada5b40056" />
   <Project Path="AppleAcademy.Domain/AppleAcademy.Domain.csproj" Id="322a5364-46a6-4a25-bf69-7342bdc65601" />
   <Project Path="AppleAcademy.Infrastructure/AppleAcademy.Infrastructure.csproj" Id="0bb72bdd-9a18-4275-89c9-612ffafcc159" />

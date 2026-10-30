@@ -1,0 +1,16 @@
+C:\Users\WelligtonAndrédaSilv\source\repos\AppleAcademy\AppleAcademy.Infrastructure\bin\Debug\net10.0\AppleAcademy.Infrastructure.deps.json
+C:\Users\WelligtonAndrédaSilv\source\repos\AppleAcademy\AppleAcademy.Infrastructure\bin\Debug\net10.0\AppleAcademy.Infrastructure.dll
+C:\Users\WelligtonAndrédaSilv\source\repos\AppleAcademy\AppleAcademy.Infrastructure\bin\Debug\net10.0\AppleAcademy.Infrastructure.pdb
+C:\Users\WelligtonAndrédaSilv\source\repos\AppleAcademy\AppleAcademy.Infrastructure\bin\Debug\net10.0\AppleAcademy.Domain.dll
+C:\Users\WelligtonAndrédaSilv\source\repos\AppleAcademy\AppleAcademy.Infrastructure\bin\Debug\net10.0\AppleAcademy.Domain.pdb
+C:\Users\WelligtonAndrédaSilv\source\repos\AppleAcademy\AppleAcademy.Infrastructure\obj\Debug\net10.0\AppleAcademy.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\WelligtonAndrédaSilv\source\repos\AppleAcademy\AppleAcademy.Infrastructure\obj\Debug\net10.0\AppleAcademy.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\WelligtonAndrédaSilv\source\repos\AppleAcademy\AppleAcademy.Infrastructure\obj\Debug\net10.0\AppleAcademy.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\WelligtonAndrédaSilv\source\repos\AppleAcademy\AppleAcademy.Infrastructure\obj\Debug\net10.0\AppleAcademy.Infrastructure.AssemblyInfo.cs
+C:\Users\WelligtonAndrédaSilv\source\repos\AppleAcademy\AppleAcademy.Infrastructure\obj\Debug\net10.0\AppleAcademy.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\WelligtonAndrédaSilv\source\repos\AppleAcademy\AppleAcademy.Infrastructure\obj\Debug\net10.0\AppleAcademy.Infrastructure.sourcelink.json
+C:\Users\WelligtonAndrédaSilv\source\repos\AppleAcademy\AppleAcademy.Infrastructure\obj\Debug\net10.0\AppleAca.0F32B6F5.Up2Date
+C:\Users\WelligtonAndrédaSilv\source\repos\AppleAcademy\AppleAcademy.Infrastructure\obj\Debug\net10.0\AppleAcademy.Infrastructure.dll
+C:\Users\WelligtonAndrédaSilv\source\repos\AppleAcademy\AppleAcademy.Infrastructure\obj\Debug\net10.0\refint\AppleAcademy.Infrastructure.dll
+C:\Users\WelligtonAndrédaSilv\source\repos\AppleAcademy\AppleAcademy.Infrastructure\obj\Debug\net10.0\AppleAcademy.Infrastructure.pdb
+C:\Users\WelligtonAndrédaSilv\source\repos\AppleAcademy\AppleAcademy.Infrastructure\obj\Debug\net10.0\ref\AppleAcademy.Infrastructure.dll
