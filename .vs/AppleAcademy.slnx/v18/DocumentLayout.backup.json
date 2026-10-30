@@ -1,28 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\WelligtonAndr\u00E9daSilv\\source\\repos\\AppleAcademy\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{0BB72BDD-9A18-4275-89C9-612FFAFCC159}|AppleAcademy.Infrastructure\\AppleAcademy.Infrastructure.csproj|c:\\users\\welligtonandr\u00E9dasilv\\source\\repos\\appleacademy\\appleacademy.infrastructure\\appleacademy.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{0BB72BDD-9A18-4275-89C9-612FFAFCC159}|AppleAcademy.Infrastructure\\AppleAcademy.Infrastructure.csproj|solutionrelative:appleacademy.infrastructure\\appleacademy.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{322A5364-46A6-4A25-BF69-7342BDC65601}|AppleAcademy.Domain\\AppleAcademy.Domain.csproj|c:\\users\\welligtonandr\u00E9dasilv\\source\\repos\\appleacademy\\appleacademy.domain\\appleacademy.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{322A5364-46A6-4A25-BF69-7342BDC65601}|AppleAcademy.Domain\\AppleAcademy.Domain.csproj|solutionrelative:appleacademy.domain\\appleacademy.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{322A5364-46A6-4A25-BF69-7342BDC65601}|AppleAcademy.Domain\\AppleAcademy.Domain.csproj|c:\\users\\welligtonandr\u00E9dasilv\\source\\repos\\appleacademy\\appleacademy.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{322A5364-46A6-4A25-BF69-7342BDC65601}|AppleAcademy.Domain\\AppleAcademy.Domain.csproj|solutionrelative:appleacademy.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{322A5364-46A6-4A25-BF69-7342BDC65601}|AppleAcademy.Domain\\AppleAcademy.Domain.csproj|c:\\users\\welligtonandr\u00E9dasilv\\source\\repos\\appleacademy\\appleacademy.domain\\entities\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{322A5364-46A6-4A25-BF69-7342BDC65601}|AppleAcademy.Domain\\AppleAcademy.Domain.csproj|solutionrelative:appleacademy.domain\\entities\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{322A5364-46A6-4A25-BF69-7342BDC65601}|AppleAcademy.Domain\\AppleAcademy.Domain.csproj|c:\\users\\welligtonandr\u00E9dasilv\\source\\repos\\appleacademy\\appleacademy.domain\\entities\\perfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{322A5364-46A6-4A25-BF69-7342BDC65601}|AppleAcademy.Domain\\AppleAcademy.Domain.csproj|solutionrelative:appleacademy.domain\\entities\\perfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -30,76 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AppleAcademy.Infrastructure",
-              "DocumentMoniker": "C:\\Users\\WelligtonAndr\u00E9daSilv\\source\\repos\\AppleAcademy\\AppleAcademy.Infrastructure\\AppleAcademy.Infrastructure.csproj",
-              "RelativeDocumentMoniker": "AppleAcademy.Infrastructure\\AppleAcademy.Infrastructure.csproj",
-              "ToolTip": "C:\\Users\\WelligtonAndr\u00E9daSilv\\source\\repos\\AppleAcademy\\AppleAcademy.Infrastructure\\AppleAcademy.Infrastructure.csproj",
-              "RelativeToolTip": "AppleAcademy.Infrastructure\\AppleAcademy.Infrastructure.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-10-29T18:48:28.295Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AppleAcademy.Domain",
-              "DocumentMoniker": "C:\\Users\\WelligtonAndr\u00E9daSilv\\source\\repos\\AppleAcademy\\AppleAcademy.Domain\\AppleAcademy.Domain.csproj",
-              "RelativeDocumentMoniker": "AppleAcademy.Domain\\AppleAcademy.Domain.csproj",
-              "ToolTip": "C:\\Users\\WelligtonAndr\u00E9daSilv\\source\\repos\\AppleAcademy\\AppleAcademy.Domain\\AppleAcademy.Domain.csproj",
-              "RelativeToolTip": "AppleAcademy.Domain\\AppleAcademy.Domain.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-10-29T18:48:13.084Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\WelligtonAndr\u00E9daSilv\\source\\repos\\AppleAcademy\\AppleAcademy.Domain\\Entities\\User.cs",
-              "RelativeDocumentMoniker": "AppleAcademy.Domain\\Entities\\User.cs",
-              "ToolTip": "C:\\Users\\WelligtonAndr\u00E9daSilv\\source\\repos\\AppleAcademy\\AppleAcademy.Domain\\Entities\\User.cs",
-              "RelativeToolTip": "AppleAcademy.Domain\\Entities\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-29T18:46:55.218Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Status.cs",
-              "DocumentMoniker": "C:\\Users\\WelligtonAndr\u00E9daSilv\\source\\repos\\AppleAcademy\\AppleAcademy.Domain\\Entities\\Status.cs",
-              "RelativeDocumentMoniker": "AppleAcademy.Domain\\Entities\\Status.cs",
-              "ToolTip": "C:\\Users\\WelligtonAndr\u00E9daSilv\\source\\repos\\AppleAcademy\\AppleAcademy.Domain\\Entities\\Status.cs",
-              "RelativeToolTip": "AppleAcademy.Domain\\Entities\\Status.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-29T18:46:49.013Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Perfil.cs",
-              "DocumentMoniker": "C:\\Users\\WelligtonAndr\u00E9daSilv\\source\\repos\\AppleAcademy\\AppleAcademy.Domain\\Entities\\Perfil.cs",
-              "RelativeDocumentMoniker": "AppleAcademy.Domain\\Entities\\Perfil.cs",
-              "ToolTip": "C:\\Users\\WelligtonAndr\u00E9daSilv\\source\\repos\\AppleAcademy\\AppleAcademy.Domain\\Entities\\Perfil.cs",
-              "RelativeToolTip": "AppleAcademy.Domain\\Entities\\Perfil.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-29T18:46:26.647Z",
-              "EditorCaption": ""
             }
           ]
         }
