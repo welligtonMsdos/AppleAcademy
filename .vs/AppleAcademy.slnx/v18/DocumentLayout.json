@@ -1,7 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\WelligtonAndr\u00E9daSilv\\source\\repos\\AppleAcademy\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9C88B6FB-1E9E-4EC5-A92E-0FF7419909CD}|AppleAcademy.Api\\AppleAcademy.Api.csproj|c:\\users\\welligtonandr\u00E9dasilv\\source\\repos\\appleacademy\\appleacademy.api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C88B6FB-1E9E-4EC5-A92E-0FF7419909CD}|AppleAcademy.Api\\AppleAcademy.Api.csproj|solutionrelative:appleacademy.api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +14,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\WelligtonAndr\u00E9daSilv\\source\\repos\\AppleAcademy\\AppleAcademy.Api\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "AppleAcademy.Api\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\WelligtonAndr\u00E9daSilv\\source\\repos\\AppleAcademy\\AppleAcademy.Api\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "AppleAcademy.Api\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAC4AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-03T17:45:35.204Z",
+              "EditorCaption": ""
             }
           ]
         }

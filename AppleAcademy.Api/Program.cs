@@ -2,13 +2,16 @@ using AppleAcademy.Api.Filters;
 using AppleAcademy.Api.Middleware;
 using AppleAcademy.Application.Extensions;
 using AppleAcademy.Infrastructure.Data;
+using AppleAcademy.Domain.Entities;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.HttpOverrides;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Scalar.AspNetCore;
 using System.Text;
 
-DotNetEnv.Env.Load();
+if (File.Exists(".env"))
+    DotNetEnv.Env.Load();
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -30,7 +33,7 @@ builder.Services.AddCors(options =>
     });
 });
 
-var secret = builder.Configuration["JwtSettings:Key"];
+var secret = builder.Configuration["JWT_KEY"];
 
 if (string.IsNullOrEmpty(secret) || secret.Length < 32)
     throw new InvalidOperationException("JWT key is missing or too short (minimum 32 characters).");
@@ -65,6 +68,34 @@ builder.Services.AddOpenApi();
 
 var app = builder.Build();
 
+{
+    using var scope = app.Services.CreateScope();
+    var db = scope.ServiceProvider.GetRequiredService<AppleAcademyContext>();
+    await db.Database.MigrateAsync();
+
+    var adminEmail = app.Configuration["ADMIN_EMAIL"];
+    var adminPassword = app.Configuration["ADMIN_PASSWORD"];
+    if (string.IsNullOrWhiteSpace(adminEmail) || string.IsNullOrWhiteSpace(adminPassword) || adminPassword.Length < 10)
+        throw new InvalidOperationException("Configure ADMIN_EMAIL e ADMIN_PASSWORD (mínimo de 10 caracteres) para criar o administrador inicial.");
+
+    if (!await db.Users.AnyAsync(u => u.PerfilGuid == AppleAcademyContext.AdminPerfilGuid && u.Active))
+    {
+        if (await db.Users.AnyAsync(u => u.Email == adminEmail))
+            throw new InvalidOperationException("ADMIN_EMAIL já está em uso por outro usuário.");
+
+        db.Users.Add(new User
+        {
+            Guid = Guid.NewGuid(),
+            Name = "Administrador",
+            Email = adminEmail,
+            Password = BCrypt.Net.BCrypt.HashPassword(adminPassword),
+            PerfilGuid = AppleAcademyContext.AdminPerfilGuid,
+            Active = true
+        });
+        await db.SaveChangesAsync();
+    }
+}
+
 app.UseForwardedHeaders();
 
 app.UseMiddleware<ErrorHandlingMiddleware>();
@@ -88,7 +119,9 @@ app.MapScalarApiReference(options =>
 
 app.UseCors("CorsPolicy");
 
-app.UseHttpsRedirection();
+if (!string.IsNullOrWhiteSpace(app.Configuration["HTTPS_PORTS"]) ||
+    !string.IsNullOrWhiteSpace(app.Configuration["HTTPS_PORT"]))
+    app.UseHttpsRedirection();
 
 app.UseAuthentication();
 

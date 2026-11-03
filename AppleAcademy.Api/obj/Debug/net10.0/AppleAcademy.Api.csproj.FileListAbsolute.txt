@@ -127,7 +127,6 @@ C:\Users\WelligtonAndrédaSilv\source\repos\AppleAcademy\AppleAcademy.Api\obj\De
 C:\Users\WelligtonAndrédaSilv\source\repos\AppleAcademy\AppleAcademy.Api\obj\Debug\net10.0\staticwebassets.development.json
 C:\Users\WelligtonAndrédaSilv\source\repos\AppleAcademy\AppleAcademy.Api\obj\Debug\net10.0\staticwebassets.build.endpoints.json
 C:\Users\WelligtonAndrédaSilv\source\repos\AppleAcademy\AppleAcademy.Api\obj\Debug\net10.0\swae.build.ex.cache
-C:\Users\WelligtonAndrédaSilv\source\repos\AppleAcademy\AppleAcademy.Api\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
 C:\Users\WelligtonAndrédaSilv\source\repos\AppleAcademy\AppleAcademy.Api\obj\Debug\net10.0\AppleAca.92DC9756.Up2Date
 C:\Users\WelligtonAndrédaSilv\source\repos\AppleAcademy\AppleAcademy.Api\obj\Debug\net10.0\AppleAcademy.Api.dll
 C:\Users\WelligtonAndrédaSilv\source\repos\AppleAcademy\AppleAcademy.Api\obj\Debug\net10.0\refint\AppleAcademy.Api.dll

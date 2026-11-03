@@ -11,8 +11,7 @@ public record UserCreateDto(string Name,
                             string Password,
                             Guid PerfilGuid);
 
-public record UserUpdateDto(Guid Guid,
-                            string Name,
+public record UserUpdateDto(string Name,
                             string Email,
                             Guid PerfilGuid);
 

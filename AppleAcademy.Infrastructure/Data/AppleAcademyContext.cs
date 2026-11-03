@@ -5,6 +5,7 @@ namespace AppleAcademy.Infrastructure.Data;
 
 public class AppleAcademyContext:DbContext
 {
+    public static readonly Guid AdminPerfilGuid = Guid.Parse("9ddf8627-87fa-4f38-86e1-9c5f5530ed98");
     public DbSet<Status> Statuses => Set<Status>();
     public DbSet<Perfil> Perfis => Set<Perfil>();
     public DbSet<User> Users => Set<User>();
@@ -25,6 +26,7 @@ public class AppleAcademyContext:DbContext
         perfil.ToTable(nameof(Perfil));
         perfil.HasKey(item => item.Guid);
         perfil.Property(item => item.Name).HasMaxLength(50).IsRequired();
+        perfil.HasData(new Perfil { Guid = AdminPerfilGuid, Name = "Admin", Active = true });
 
         var user = modelBuilder.Entity<User>();
         user.ToTable(nameof(User));

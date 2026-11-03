@@ -7,8 +7,8 @@ using Microsoft.AspNetCore.Mvc;
 namespace AppleAcademy.Api.Controllers;
 
 [ApiController]
-[Route("api/users")]
-[Authorize]
+[Route("api/[controller]")]
+[Authorize(Roles = "Admin")]
 public class UsersController : BaseController
 {
     private readonly IUserService _userService;

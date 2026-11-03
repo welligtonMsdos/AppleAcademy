@@ -13,6 +13,9 @@ FROM mcr.microsoft.com/dotnet/sdk:10.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 COPY ["AppleAcademy.Api/AppleAcademy.Api.csproj", "AppleAcademy.Api/"]
+COPY ["AppleAcademy.Application/AppleAcademy.Application.csproj", "AppleAcademy.Application/"]
+COPY ["AppleAcademy.Domain/AppleAcademy.Domain.csproj", "AppleAcademy.Domain/"]
+COPY ["AppleAcademy.Infrastructure/AppleAcademy.Infrastructure.csproj", "AppleAcademy.Infrastructure/"]
 RUN dotnet restore "./AppleAcademy.Api/AppleAcademy.Api.csproj"
 COPY . .
 WORKDIR "/src/AppleAcademy.Api"

@@ -1,5 +1,7 @@
-﻿using AppleAcademy.Domain.Interfaces;
+﻿using AppleAcademy.Application.Interfaces;
+using AppleAcademy.Domain.Interfaces;
 using AppleAcademy.Infrastructure.Repositories;
+using AppleAcademy.Infrastructure.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -21,6 +23,7 @@ public static class DependencyInjection
         services.AddScoped<IPerfilRepository, PerfilRepository>();
         services.AddScoped<IUserRepository, UserRepository>();
         services.AddScoped<IStatusRepository, StatusRepository>();
+        services.AddScoped<ITokenService, TokenService>();
 
         return services;
     }
