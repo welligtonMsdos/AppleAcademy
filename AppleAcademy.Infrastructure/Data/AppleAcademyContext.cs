@@ -6,6 +6,8 @@ namespace AppleAcademy.Infrastructure.Data;
 public class AppleAcademyContext:DbContext
 {
     public static readonly Guid AdminPerfilGuid = Guid.Parse("9ddf8627-87fa-4f38-86e1-9c5f5530ed98");
+    public static readonly Guid AlunoPerfilGuid = Guid.Parse("dee0f9e9-becc-47a4-8aa6-db09ac1c394d");
+    public static readonly Guid ProfessorPerfilGuid = Guid.Parse("8ba1ccbe-85a5-4eea-b6f0-51006fd1091f");
     public DbSet<Status> Statuses => Set<Status>();
     public DbSet<Perfil> Perfis => Set<Perfil>();
     public DbSet<User> Users => Set<User>();

@@ -35,7 +35,8 @@ namespace AppleAcademy.Infrastructure.Data.Migrations
                 );
                 CREATE INDEX IF NOT EXISTS "IX_User_PerfilGuid" ON "User" ("PerfilGuid");
                 INSERT INTO "Perfil" ("Guid", "Name", "Active")
-                VALUES ('9ddf8627-87fa-4f38-86e1-9c5f5530ed98', 'Admin', true)
+                SELECT '9ddf8627-87fa-4f38-86e1-9c5f5530ed98', 'Admin', true
+                WHERE NOT EXISTS (SELECT 1 FROM "Perfil" WHERE lower("Name") = lower('Admin'))
                 ON CONFLICT ("Guid") DO NOTHING;
                 """);
         }

@@ -1,20 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\WelligtonAndr\u00E9daSilv\\source\\repos\\AppleAcademy\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{AE2F52F0-2731-4A34-88E6-50ADA5B40056}|AppleAcademy.Application\\AppleAcademy.Application.csproj|c:\\users\\welligtonandr\u00E9dasilv\\source\\repos\\appleacademy\\appleacademy.application\\dtos\\perfildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE2F52F0-2731-4A34-88E6-50ADA5B40056}|AppleAcademy.Application\\AppleAcademy.Application.csproj|solutionrelative:appleacademy.application\\dtos\\perfildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9C88B6FB-1E9E-4EC5-A92E-0FF7419909CD}|AppleAcademy.Api\\AppleAcademy.Api.csproj|c:\\users\\welligtonandr\u00E9dasilv\\source\\repos\\appleacademy\\appleacademy.api\\controllers\\perfiscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C88B6FB-1E9E-4EC5-A92E-0FF7419909CD}|AppleAcademy.Api\\AppleAcademy.Api.csproj|solutionrelative:appleacademy.api\\controllers\\perfiscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9C88B6FB-1E9E-4EC5-A92E-0FF7419909CD}|AppleAcademy.Api\\AppleAcademy.Api.csproj|c:\\users\\welligtonandr\u00E9dasilv\\source\\repos\\appleacademy\\appleacademy.api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C88B6FB-1E9E-4EC5-A92E-0FF7419909CD}|AppleAcademy.Api\\AppleAcademy.Api.csproj|solutionrelative:appleacademy.api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -22,50 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": -1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PerfilDto.cs",
-              "DocumentMoniker": "C:\\Users\\WelligtonAndr\u00E9daSilv\\source\\repos\\AppleAcademy\\AppleAcademy.Application\\Dtos\\PerfilDto.cs",
-              "RelativeDocumentMoniker": "AppleAcademy.Application\\Dtos\\PerfilDto.cs",
-              "ToolTip": "C:\\Users\\WelligtonAndr\u00E9daSilv\\source\\repos\\AppleAcademy\\AppleAcademy.Application\\Dtos\\PerfilDto.cs",
-              "RelativeToolTip": "AppleAcademy.Application\\Dtos\\PerfilDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-03T18:07:44.649Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\Users\\WelligtonAndr\u00E9daSilv\\source\\repos\\AppleAcademy\\AppleAcademy.Api\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "AppleAcademy.Api\\Controllers\\UsersController.cs",
-              "ToolTip": "C:\\Users\\WelligtonAndr\u00E9daSilv\\source\\repos\\AppleAcademy\\AppleAcademy.Api\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "AppleAcademy.Api\\Controllers\\UsersController.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAAEcAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-03T17:58:00.267Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PerfisController.cs",
-              "DocumentMoniker": "C:\\Users\\WelligtonAndr\u00E9daSilv\\source\\repos\\AppleAcademy\\AppleAcademy.Api\\Controllers\\PerfisController.cs",
-              "RelativeDocumentMoniker": "AppleAcademy.Api\\Controllers\\PerfisController.cs",
-              "ToolTip": "C:\\Users\\WelligtonAndr\u00E9daSilv\\source\\repos\\AppleAcademy\\AppleAcademy.Api\\Controllers\\PerfisController.cs",
-              "RelativeToolTip": "AppleAcademy.Api\\Controllers\\PerfisController.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAgwC8AAABGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-03T17:57:43.964Z",
-              "EditorCaption": ""
             }
           ]
         }

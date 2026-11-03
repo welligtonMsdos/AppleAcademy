@@ -73,23 +73,38 @@ var app = builder.Build();
     var db = scope.ServiceProvider.GetRequiredService<AppleAcademyContext>();
     await db.Database.MigrateAsync();
 
+    var defaultProfiles = new[]
+    {
+        (Guid: AppleAcademyContext.AdminPerfilGuid, Name: "Admin"),
+        (Guid: AppleAcademyContext.AlunoPerfilGuid, Name: "Aluno"),
+        (Guid: AppleAcademyContext.ProfessorPerfilGuid, Name: "Professor")
+    };
+    foreach (var profile in defaultProfiles)
+    {
+        if (!await db.Perfis.AnyAsync(p => EF.Functions.ILike(p.Name!, profile.Name)))
+            db.Perfis.Add(new Perfil { Guid = profile.Guid, Name = profile.Name, Active = true });
+    }
+    await db.SaveChangesAsync();
+
     var adminEmail = app.Configuration["ADMIN_EMAIL"];
     var adminPassword = app.Configuration["ADMIN_PASSWORD"];
     if (string.IsNullOrWhiteSpace(adminEmail) || string.IsNullOrWhiteSpace(adminPassword) || adminPassword.Length < 10)
         throw new InvalidOperationException("Configure ADMIN_EMAIL e ADMIN_PASSWORD (mínimo de 10 caracteres) para criar o administrador inicial.");
 
-    if (!await db.Users.AnyAsync(u => u.PerfilGuid == AppleAcademyContext.AdminPerfilGuid && u.Active))
+    if (!await db.Users.AnyAsync(u => u.Active && EF.Functions.ILike(u.Perfil!.Name!, "Admin")))
     {
         if (await db.Users.AnyAsync(u => u.Email == adminEmail))
             throw new InvalidOperationException("ADMIN_EMAIL já está em uso por outro usuário.");
 
+        var adminPerfilGuid = await db.Perfis.Where(p => EF.Functions.ILike(p.Name!, "Admin"))
+            .Select(p => p.Guid).FirstAsync();
         db.Users.Add(new User
         {
             Guid = Guid.NewGuid(),
             Name = "Administrador",
             Email = adminEmail,
             Password = BCrypt.Net.BCrypt.HashPassword(adminPassword),
-            PerfilGuid = AppleAcademyContext.AdminPerfilGuid,
+            PerfilGuid = adminPerfilGuid,
             Active = true
         });
         await db.SaveChangesAsync();

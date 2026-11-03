@@ -13,4 +13,6 @@ A API fica disponível em `http://localhost:5000` e a documentação em `http://
 
 Na inicialização, a API aplica as migrations, cria o perfil `Admin` (GUID `9ddf8627-87fa-4f38-86e1-9c5f5530ed98`) e, se ainda não existir um administrador ativo, cria o usuário com `ADMIN_EMAIL` e `ADMIN_PASSWORD`. A senha é armazenada como hash BCrypt. As credenciais do `.env` são usadas apenas na criação inicial; alterações posteriores no arquivo não redefinem a senha do usuário existente.
 
+Os perfis padrão são `Admin`, `Aluno` e `Professor`. A migration adiciona os ausentes pelo nome; em cada inicialização da API, a mesma checagem recria apenas os que não existirem. Perfis existentes são preservados.
+
 Para entrar, envie `POST /api/Auth/Login` com `{"email":"<ADMIN_EMAIL>","password":"<ADMIN_PASSWORD>"}`. Use o token retornado como Bearer nas rotas de `api/Users`. Apenas o perfil `Admin` pode acessar essas rotas, inclusive `api/Users/SignUp`.
