@@ -16,3 +16,17 @@ Na inicialização, a API aplica as migrations, cria o perfil `Admin` (GUID `9dd
 Os perfis padrão são `Admin`, `Aluno` e `Professor`. A migration adiciona os ausentes pelo nome; em cada inicialização da API, a mesma checagem recria apenas os que não existirem. Perfis existentes são preservados.
 
 Para entrar, envie `POST /api/Auth/Login` com `{"email":"<ADMIN_EMAIL>","password":"<ADMIN_PASSWORD>"}`. Use o token retornado como Bearer nas rotas de `api/Users`. Apenas o perfil `Admin` pode acessar essas rotas, inclusive `api/Users/SignUp`.
+
+## Status
+
+O CRUD de `api/Status` exige token Bearer com perfil `Admin`:
+
+Os status padrão são `Pendente`, `Concluído` e `Negado`. A migration insere somente os que não existirem; em cada inicialização, a API faz a mesma checagem pelo texto da descrição, sem duplicar registros existentes.
+
+| Método | Rota | Ação |
+| --- | --- | --- |
+| GET | `/api/Status` | Lista os status ativos |
+| GET | `/api/Status/{guid}` | Busca um status ativo |
+| POST | `/api/Status` | Cria com `{"description":"..."}` |
+| PUT | `/api/Status/{guid}` | Atualiza a descrição |
+| DELETE | `/api/Status/{guid}` | Desativa o status |

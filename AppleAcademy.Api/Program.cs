@@ -86,6 +86,19 @@ var app = builder.Build();
     }
     await db.SaveChangesAsync();
 
+    var defaultStatuses = new[]
+    {
+        (Guid: AppleAcademyContext.PendenteStatusGuid, Description: "Pendente"),
+        (Guid: AppleAcademyContext.ConcluidoStatusGuid, Description: "Concluído"),
+        (Guid: AppleAcademyContext.NegadoStatusGuid, Description: "Negado")
+    };
+    foreach (var defaultStatus in defaultStatuses)
+    {
+        if (!await db.Statuses.AnyAsync(s => EF.Functions.ILike(s.Description!, defaultStatus.Description)))
+            db.Statuses.Add(new Status { Guid = defaultStatus.Guid, Description = defaultStatus.Description, Active = true });
+    }
+    await db.SaveChangesAsync();
+
     var adminEmail = app.Configuration["ADMIN_EMAIL"];
     var adminPassword = app.Configuration["ADMIN_PASSWORD"];
     if (string.IsNullOrWhiteSpace(adminEmail) || string.IsNullOrWhiteSpace(adminPassword) || adminPassword.Length < 10)

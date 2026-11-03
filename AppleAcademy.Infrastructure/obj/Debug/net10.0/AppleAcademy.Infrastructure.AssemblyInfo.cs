@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AppleAcademy.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c2aa8bfa9bcde9bf81cca701ada88b96fbbc17d4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+59b7c443d9c7ebe3033a94804e51c4cb45406df9")]
 [assembly: System.Reflection.AssemblyProductAttribute("AppleAcademy.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AppleAcademy.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

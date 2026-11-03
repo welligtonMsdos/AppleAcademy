@@ -37,10 +37,10 @@ public class StatusRepository : IStatusRepository
     public async Task<ICollection<Status>> GetAllAsync()
     {
         const string sql = """
-            SELECT "Guid", "Name", "Description", "Active"
+            SELECT "Guid", "Description", "Active"
             FROM "Status" 
             WHERE "Active" = true
-            ORDER BY "Name"
+            ORDER BY "Description"
             """;
             
         using var connection = _dataSource.CreateConnection();
@@ -51,9 +51,9 @@ public class StatusRepository : IStatusRepository
     public async Task<Status?> GetByGuidAsync(Guid guid)
     {
         const string sql = """
-            SELECT "Guid", "Name", "Description", "Active"
-            FROM "Departamento"
-            WHERE "Guid" = @Guid AND "Ativo" = TRUE;
+            SELECT "Guid", "Description", "Active"
+            FROM "Status"
+            WHERE "Guid" = @Guid AND "Active" = true
             """;
 
         await using var connection = await _dataSource.OpenConnectionAsync();

@@ -144,4 +144,3 @@ C:\Users\WelligtonAndrédaSilv\source\repos\AppleAcademy\AppleAcademy.Api\bin\De
 C:\Users\WelligtonAndrédaSilv\source\repos\AppleAcademy\AppleAcademy.Api\bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\WelligtonAndrédaSilv\source\repos\AppleAcademy\AppleAcademy.Api\bin\Debug\net10.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\WelligtonAndrédaSilv\source\repos\AppleAcademy\AppleAcademy.Api\bin\Debug\net10.0\System.IdentityModel.Tokens.Jwt.dll
-C:\Users\WelligtonAndrédaSilv\source\repos\AppleAcademy\AppleAcademy.Api\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt

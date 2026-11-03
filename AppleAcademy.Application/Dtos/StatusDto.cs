@@ -5,5 +5,4 @@ public record StatusDto(Guid Guid,
 
 public record StatusCreateDto(string Description);
 
-public record StatusUpdateDto(Guid Guid,
-                              string Description);
+public record StatusUpdateDto(string Description);

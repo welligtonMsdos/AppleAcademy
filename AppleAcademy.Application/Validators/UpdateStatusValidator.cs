@@ -9,7 +9,7 @@ public class UpdateStatusValidator : AbstractValidator<StatusUpdateDto>
     {
         RuleFor(x => x.Description)
             .NotEmpty().WithMessage("Descrição é obrigatória.")
-            .MinimumLength(8).WithMessage("Descrição deve ter no mínimo 8 caracteres.")
+            .MinimumLength(3).WithMessage("Descrição deve ter no mínimo 3 caracteres.")
             .MaximumLength(50).WithMessage("Descrição não deve exceder 50 caracteres.");
     }
 }

@@ -32,7 +32,7 @@ public class StatusService : IStatusService
 
     public async Task<bool> DeleteAsync(Guid guid)
     {
-        if (guid == Guid.Empty) throw new ArgumentException("O identificador do Status é inválido.", nameof(guid));
+        if (guid == Guid.Empty) return false;
 
         return await _repository.DeleteAsync(guid);
     }
@@ -44,7 +44,7 @@ public class StatusService : IStatusService
 
     public async Task<StatusDto?> GetByGuidAsync(Guid guid)
     {
-        if (guid == Guid.Empty) throw new ArgumentException("O identificador do Status é inválido.", nameof(guid));
+        if (guid == Guid.Empty) return null;
 
         var status = await _repository.GetByGuidAsync(guid);
 
@@ -55,7 +55,7 @@ public class StatusService : IStatusService
     {
         ArgumentNullException.ThrowIfNull(statusUpdateDto);
 
-        if (guid == Guid.Empty) throw new ArgumentException("O identificador do Status é inválido.", nameof(guid));
+        if (guid == Guid.Empty) return null;
 
         var status = new Status
         {
