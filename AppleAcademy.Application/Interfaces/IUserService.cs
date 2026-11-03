@@ -9,4 +9,5 @@ public interface IUserService
     Task<bool> DeleteAsync(Guid guid);
     Task<ICollection<UserDto>> GetAllAsync();
     Task<UserDto?> GetByGuidAsync(Guid guid);
+    Task<string> LoginAsync(UserLoginDto userLoginDto);
 }

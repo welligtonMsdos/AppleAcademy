@@ -14,3 +14,5 @@ C:\Users\WelligtonAndrédaSilv\source\repos\AppleAcademy\AppleAcademy.Infrastruc
 C:\Users\WelligtonAndrédaSilv\source\repos\AppleAcademy\AppleAcademy.Infrastructure\obj\Debug\net10.0\refint\AppleAcademy.Infrastructure.dll
 C:\Users\WelligtonAndrédaSilv\source\repos\AppleAcademy\AppleAcademy.Infrastructure\obj\Debug\net10.0\AppleAcademy.Infrastructure.pdb
 C:\Users\WelligtonAndrédaSilv\source\repos\AppleAcademy\AppleAcademy.Infrastructure\obj\Debug\net10.0\ref\AppleAcademy.Infrastructure.dll
+C:\Users\WelligtonAndrédaSilv\source\repos\AppleAcademy\AppleAcademy.Infrastructure\bin\Debug\net10.0\AppleAcademy.Application.dll
+C:\Users\WelligtonAndrédaSilv\source\repos\AppleAcademy\AppleAcademy.Infrastructure\bin\Debug\net10.0\AppleAcademy.Application.pdb

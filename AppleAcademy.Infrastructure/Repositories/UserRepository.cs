@@ -47,8 +47,21 @@ public class UserRepository : IUserRepository
         using var connection = _dataSource.CreateConnection();
 
         return (await connection.QueryAsync<User>(sql)).ToList();
-    }   
-    
+    }
+
+    public async Task<User?> GetByEmailAsync(string email)
+    {
+        const string sql = """
+            SELECT u."Guid", u."Name", u."Email", u."Password", u."PerfilGuid", u."Active"
+            FROM "User" u
+            INNER JOIN "Perfil" p ON u."PerfilGuid" = p."Guid"
+            WHERE u."Email" = @Email AND u."Active" = true
+            """;
+
+        await using var connection = await _dataSource.OpenConnectionAsync();
+
+        return await connection.QuerySingleOrDefaultAsync<User>(new CommandDefinition(sql, new { Email = email }));
+    }
 
     public async Task<User?> GetByGuidAsync(Guid guid)
     {

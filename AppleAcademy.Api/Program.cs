@@ -2,8 +2,13 @@ using AppleAcademy.Api.Filters;
 using AppleAcademy.Api.Middleware;
 using AppleAcademy.Application.Extensions;
 using AppleAcademy.Infrastructure.Data;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.HttpOverrides;
+using Microsoft.IdentityModel.Tokens;
 using Scalar.AspNetCore;
+using System.Text;
+
+DotNetEnv.Env.Load();
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,6 +29,28 @@ builder.Services.AddCors(options =>
               .AllowCredentials();
     });
 });
+
+var secret = builder.Configuration["JwtSettings:Key"];
+
+if (string.IsNullOrEmpty(secret) || secret.Length < 32)
+    throw new InvalidOperationException("JWT key is missing or too short (minimum 32 characters).");
+
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+    {
+        options.RequireHttpsMetadata = false;
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuerSigningKey = true,
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secret)),
+            ValidateIssuer = true,
+            ValidIssuer = "http://localhost:5000",
+            ValidateAudience = false,
+            ValidateLifetime = true
+        };
+    });
+
+builder.Services.AddAuthorization();
 
 builder.Services.AddControllers(options =>
 {

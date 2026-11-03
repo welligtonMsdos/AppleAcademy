@@ -1,4 +1,5 @@
 ﻿using AppleAcademy.Application.Dtos;
+using AppleAcademy.Application.Exceptions;
 using AppleAcademy.Application.Interfaces;
 using AppleAcademy.Domain.Entities;
 using AppleAcademy.Domain.Interfaces;
@@ -8,10 +9,13 @@ namespace AppleAcademy.Application.Services;
 public class UserService : IUserService
 {
     private readonly IUserRepository _repository;
+    private readonly ITokenService _tokenService;
 
-    public UserService(IUserRepository repository)
+    public UserService(IUserRepository repository, 
+                       ITokenService tokenService)
     {
         _repository = repository;
+        _tokenService = tokenService;
     }
 
     public async Task<UserDto> AddAsync(UserCreateDto userCreateDto)
@@ -23,6 +27,7 @@ public class UserService : IUserService
             Guid = Guid.NewGuid(),
             Name = userCreateDto.Name,
             Email = userCreateDto.Email,
+            Password = BCrypt.Net.BCrypt.HashPassword(userCreateDto.Password),
             Active = true,
             PerfilGuid = userCreateDto.PerfilGuid
         };
@@ -63,6 +68,10 @@ public class UserService : IUserService
 
         if (userExists is null) throw new InvalidOperationException("O Usuário não foi encontrado.");
 
+        var emailExists = await _repository.GetByEmailAsync(userUpdateDto.Email);
+        if (emailExists is not null && emailExists.Guid != guid)
+            throw new BusinessException("O e-mail informado já está em uso por outro usuário.");
+
         userExists.Name = userUpdateDto.Name;
         userExists.Email = userUpdateDto.Email;
         userExists.PerfilGuid = userUpdateDto.PerfilGuid;
@@ -79,4 +88,24 @@ public class UserService : IUserService
         user.Email!,
         user.PerfilGuid,
         user.Perfil!.Name!);
+
+    public async Task<string> LoginAsync(UserLoginDto userLoginDto)
+    {
+        var user = await _repository.GetByEmailAsync(userLoginDto.Email);
+
+        if (user is null) throw new BusinessException("Usuário não encontrado.");
+
+        if (!BCrypt.Net.BCrypt.Verify(userLoginDto.Password, user.Password))
+            throw new BusinessException("Senha inválida.");
+
+        var userDataLoginDto = new UserDataLoginDto(
+            user.Guid, 
+            user.Name!, 
+            user.Email!, 
+            user.Perfil!.Name!);
+
+        var token = await _tokenService.GenerateToken(userDataLoginDto);
+
+        return token;
+    }
 }

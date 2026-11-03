@@ -64,6 +64,10 @@
               "target": "Package",
               "version": "[3.2.0, )"
             },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[10.0.14, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[10.0.11, )"
@@ -573,6 +577,10 @@
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.2.0, )"
+            },
             "FluentValidation": {
               "target": "Package",
               "version": "[12.2.0, )"
@@ -1256,8 +1264,8 @@
             "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\WelligtonAndrédaSilv\\source\\repos\\AppleAcademy\\AppleAcademy.Domain\\AppleAcademy.Domain.csproj": {
-                "projectPath": "C:\\Users\\WelligtonAndrédaSilv\\source\\repos\\AppleAcademy\\AppleAcademy.Domain\\AppleAcademy.Domain.csproj"
+              "C:\\Users\\WelligtonAndrédaSilv\\source\\repos\\AppleAcademy\\AppleAcademy.Application\\AppleAcademy.Application.csproj": {
+                "projectPath": "C:\\Users\\WelligtonAndrédaSilv\\source\\repos\\AppleAcademy\\AppleAcademy.Application\\AppleAcademy.Application.csproj"
               }
             }
           }
@@ -1283,6 +1291,10 @@
               "target": "Package",
               "version": "[2.1.89, )"
             },
+            "JWT": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[10.0.14, )"
@@ -1306,6 +1318,10 @@
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[10.0.3, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.23.0, )"
             }
           },
           "imports": [

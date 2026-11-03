@@ -15,3 +15,11 @@ public record UserUpdateDto(Guid Guid,
                             string Name,
                             string Email,
                             Guid PerfilGuid);
+
+public record UserDataLoginDto(Guid Guid,
+                               string Name,
+                               string Email,
+                               string PerfilName);
+
+public record UserLoginDto(string Email,
+                           string Password);
