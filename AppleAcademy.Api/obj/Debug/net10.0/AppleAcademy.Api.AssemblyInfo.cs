@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AppleAcademy.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2ad89988d86b55460295a34d081941df7019a3d2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aff8303c6995938bd6859e92cb5b13598f661f14")]
 [assembly: System.Reflection.AssemblyProductAttribute("AppleAcademy.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AppleAcademy.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
