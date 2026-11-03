@@ -1,0 +1,34 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: AppleAcademy.Api/Dockerfile
+    ports:
+      - "5000:8080"
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_HTTP_PORTS: "8080"
+      ConnectionStrings__AppleAcademyConnection: "Host=db;Port=5432;Database=appleacademy;Username=appleacademy;Password=${POSTGRES_PASSWORD:?Defina POSTGRES_PASSWORD no arquivo .env}"
+      JWT_KEY: "${JWT_KEY:?Defina JWT_KEY no arquivo .env}"
+      ADMIN_EMAIL: "${ADMIN_EMAIL:?Defina ADMIN_EMAIL no arquivo .env}"
+      ADMIN_PASSWORD: "${ADMIN_PASSWORD:?Defina ADMIN_PASSWORD no arquivo .env}"
+    depends_on:
+      db:
+        condition: service_healthy
+
+  db:
+    image: postgres:17
+    environment:
+      POSTGRES_DB: appleacademy
+      POSTGRES_USER: appleacademy
+      POSTGRES_PASSWORD: "${POSTGRES_PASSWORD:?Defina POSTGRES_PASSWORD no arquivo .env}"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U appleacademy -d appleacademy"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  postgres_data:

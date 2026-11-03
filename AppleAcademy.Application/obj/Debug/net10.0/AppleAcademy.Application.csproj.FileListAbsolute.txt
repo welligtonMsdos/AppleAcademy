@@ -1,0 +1,16 @@
+C:\Users\WelligtonAndrédaSilv\source\repos\AppleAcademy\AppleAcademy.Application\bin\Debug\net10.0\AppleAcademy.Application.deps.json
+C:\Users\WelligtonAndrédaSilv\source\repos\AppleAcademy\AppleAcademy.Application\bin\Debug\net10.0\AppleAcademy.Application.dll
+C:\Users\WelligtonAndrédaSilv\source\repos\AppleAcademy\AppleAcademy.Application\bin\Debug\net10.0\AppleAcademy.Application.pdb
+C:\Users\WelligtonAndrédaSilv\source\repos\AppleAcademy\AppleAcademy.Application\bin\Debug\net10.0\AppleAcademy.Domain.dll
+C:\Users\WelligtonAndrédaSilv\source\repos\AppleAcademy\AppleAcademy.Application\bin\Debug\net10.0\AppleAcademy.Domain.pdb
+C:\Users\WelligtonAndrédaSilv\source\repos\AppleAcademy\AppleAcademy.Application\obj\Debug\net10.0\AppleAcademy.Application.csproj.AssemblyReference.cache
+C:\Users\WelligtonAndrédaSilv\source\repos\AppleAcademy\AppleAcademy.Application\obj\Debug\net10.0\AppleAcademy.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\WelligtonAndrédaSilv\source\repos\AppleAcademy\AppleAcademy.Application\obj\Debug\net10.0\AppleAcademy.Application.AssemblyInfoInputs.cache
+C:\Users\WelligtonAndrédaSilv\source\repos\AppleAcademy\AppleAcademy.Application\obj\Debug\net10.0\AppleAcademy.Application.AssemblyInfo.cs
+C:\Users\WelligtonAndrédaSilv\source\repos\AppleAcademy\AppleAcademy.Application\obj\Debug\net10.0\AppleAcademy.Application.csproj.CoreCompileInputs.cache
+C:\Users\WelligtonAndrédaSilv\source\repos\AppleAcademy\AppleAcademy.Application\obj\Debug\net10.0\AppleAcademy.Application.sourcelink.json
+C:\Users\WelligtonAndrédaSilv\source\repos\AppleAcademy\AppleAcademy.Application\obj\Debug\net10.0\AppleAca.0DE3DD44.Up2Date
+C:\Users\WelligtonAndrédaSilv\source\repos\AppleAcademy\AppleAcademy.Application\obj\Debug\net10.0\AppleAcademy.Application.dll
+C:\Users\WelligtonAndrédaSilv\source\repos\AppleAcademy\AppleAcademy.Application\obj\Debug\net10.0\refint\AppleAcademy.Application.dll
+C:\Users\WelligtonAndrédaSilv\source\repos\AppleAcademy\AppleAcademy.Application\obj\Debug\net10.0\AppleAcademy.Application.pdb
+C:\Users\WelligtonAndrédaSilv\source\repos\AppleAcademy\AppleAcademy.Application\obj\Debug\net10.0\ref\AppleAcademy.Application.dll
